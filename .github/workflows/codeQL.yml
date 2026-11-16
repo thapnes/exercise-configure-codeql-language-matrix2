@@ -6,6 +6,8 @@ on:
     paths-ignore:
       - '**/*.md'
       - '**/*.txt'
+  schedule:
+    - cron: '20 15 * * 1'  
 
 jobs:
   CodeQL-Build:
