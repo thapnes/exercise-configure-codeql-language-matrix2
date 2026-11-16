@@ -3,6 +3,9 @@ name: "Code Scanning - Action"
 on:
   pull_request:
     branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
 
 jobs:
   CodeQL-Build:
